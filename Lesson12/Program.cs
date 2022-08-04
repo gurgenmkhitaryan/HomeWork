@@ -6,29 +6,16 @@
 
 // 9012 -> 12
 
-// Console.Write("Введите число: ");
-
-// int number = Convert.ToInt32(Console.ReadLine());
-
-// int digit = 0;
-// int sum = 0;
-// while (number != 0)
-// {
-//     number /= 10;
-//     sum = sum + digit;
-// }
-
-// Console.WriteLine($"Сумма чисел: {digit}");
-
 Console.Write("Введите число: ");
 
 int number = Convert.ToInt32(Console.ReadLine());
-int countPositive = 0;
+
+int digit = 0;
+int sum = 0;
 while (number != 0)
 {
-number /= 10;
-countPositive++; 
-
+    digit = number % 10;
+    sum = sum + digit;
 }
 
-Console.WriteLine($"Количество чисел: {countPositive}");
+Console.WriteLine($"Сумма чисел: {digit}");
